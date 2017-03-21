@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CFG IG Lesson 6 Demo</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+
+<h1>
+    <a id="my-url"></a>
+</h1>
+
+<div id="first-div">
+    <h3>Using the <code>$</code> function and selectors to select HTML</h3>
+    <p>This is a <code>div</code> with an id of <code>first-div</code></p>
+    <p>You can select it with jQuery by writing <code>$('#first-div')</code>.</p>
+    <p>Try making it blue by writing <code>$('#first-div').css('color', 'blue')</code></p>
+</div>
+
+<div id="second-div">
+    <h3>Adding a callback to a button</h3>
+    <button id="my-button">Click me!</button><br/>
+    <p>That button doesn't do anything by default.</p>
+    <p>We need to create a function, and assign it to the <code>onClick</code> handler for that button.</p>
+    <p>First we will write a function that toggles a class on this div.<p>
+    <p>This div has an id of <code>second-div</code>, and I already added a class <code>red</code> to my custom CSS file.
+    <p><code>function toggleRed() {<br>&nbsp; $('#second-div').toggleClass('red');<br>}</code></p>
+    <p>Next we will attach that to the button, which has an id of <code>my-button</code></p>
+    <p><code>$('#my-button').click(toggleRed)</code></p>
+</div>
+
+<div>
+    <h3>Loading HTML using AJAX</h3>
+    <p>We can use JavaScript to load things from a server.</p>
+    <code>$( "#ajax-destination" ).load( "https://robbie-c.github.io/cfg-ic-6/ajax/largeText.html #part-we-want" );</code>
+    <div id="ajax-destination">This line will get replaced by the loaded content.</div>
+</div>
+
+<div>
+    <h3>Loading Data using AJAX and processing in JavaScript</h3>
+    <p>We can use JavaScript to process what we loaded. Open js/main.js in an editor</p>
+    <table id="my-table"></table>
+</div>
+
+</div>
+</body>
+</html>
