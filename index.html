@@ -15,26 +15,36 @@
 <div class="container">
 
 <h1>
-    <a id="my-url"></a>
+    Cmd + Alt + J to open the console in Chrome on a Mac
 </h1>
 
+<h1 id="my-url">
+</h1>
+
+<h3>What is a function?</h3>
+<p>A function is a block of code that does something e.g. <code>Math.sqrt(16)</code></p>
+
+    <h3>What is jQuery?</h3>
+    <p>It's a tool like <code>Math.sqrt</code> that allows you to manipulate your website. And is very useful. People with a lot time and knowledge made it.</p>
+
 <div id="first-div">
-    <h3>Using the <code>$</code> function and selectors to select HTML</h3>
+    <h3>Using the jQuery <code>$</code> function and selectors to select HTML</h3>
     <p>This is a <code>div</code> with an id of <code>first-div</code></p>
-    <p>You can select it with jQuery by writing <code>$('#first-div')</code>.</p>
+    <p>You can select it with jQuery by writing <code>$('#first-div')</code>. (Remember in CSS how you styled by id with <code>#first-div</code>.</p>
     <p>Try making it blue by writing <code>$('#first-div').css('color', 'blue')</code></p>
 </div>
+
+    <h3><a href="https://codepen.io/dianaklee/pen/epBypZ" target="_blank">https://codepen.io/dianaklee/pen/epBypZ</a></h3>
 
 <div id="second-div">
     <h3>Adding a callback to a button</h3>
     <button id="my-button">Click me!</button><br/>
     <p>That button doesn't do anything by default.</p>
-    <p>We need to create a function, and assign it to the <code>onClick</code> handler for that button.</p>
-    <p>First we will write a function that toggles a class on this div.<p>
-    <p>This div has an id of <code>second-div</code>, and I already added a class <code>red</code> to my custom CSS file.
+    <p>We need to create a <strong>function</strong>, and tell the button to run it when it is clicked.</p>
+    <p>This div has an id of <code>second-div</code>, and I already added a class <code>red</code> to my custom CSS file.</p>
     <p><code>function toggleRed() {<br>&nbsp; $('#second-div').toggleClass('red');<br>}</code></p>
     <p>Next we will attach that to the button, which has an id of <code>my-button</code></p>
-    <p><code>$('#my-button').click(toggleRed)</code></p>
+    <p><code>$('#my-button').on('click', toggleRed)</code></p>
 </div>
 
 <div>
@@ -48,7 +58,7 @@
     <h3>Loading Data using AJAX and processing in JavaScript</h3>
     <p>We can use JavaScript to load and process data.</p>
     <p>This data was loaded by an AJAX call and added to the HTML in a table by my custom JavaScript code.</p>
-    <p>Open <code>js/main.js</code> in your editor to see.</p>
+    <p>Open <code>js/main.js</code> in your editor to see how this is done.</p>
     <table class="table table-striped">
         <thead>
             <tr>
