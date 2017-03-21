@@ -1,0 +1,6 @@
+# This is the .gitignore file. It tells git which files to ignore.
+# Lines that start with # are not read by git, so can be used to add comments
+# about what you are doing and why you are doing it.
+
+# The following line tells git to ignore folders at the top level called .idea
+/.idea/
