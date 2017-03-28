@@ -20,7 +20,4 @@ function onGotData(data) {
 
 $.getJSON('https://robbie-c.github.io/cfg-ic-6/ajax/data.json', onGotData);
 
-
-loadDataAndPopulateTable();
-
 console.log('You opened the console! Try writing "2 + 2" and hitting enter!');
